@@ -1,16 +1,34 @@
 ---
 layout: fundamental
-title: Pattern Primer
+title: Pattern Library / Style Guide
 ---
 
-{% for pattern in site.patterns %}
-<div class="pattern">
-  <div class="display">
-    {% if site.markdown-patterns %}{{ pattern.content | markdownify }}{% else %}{{ pattern.content }}{% endif %}
-  </div>
-  <div class="source">
-    <textarea rows="6" cols="30">{% if site.markdown-patterns %}{{ pattern.content | markdownify | xml_escape }}{% else %}{{ pattern.content | xml_escape }}{% endif %}</textarea>
-    <p><a href="{{ site.baseurl }}{{ pattern.url }}">{{ pattern.title }}</a></p>
-  </div>
-</div>
-{% endfor %}
+<div class="patterns__site">
+
+  <header class="patterns__header">
+		<h1><span>Cronofy</span> Style Guide</h1>
+		<p>This is a styleguide/pattern library with styled elements and shortcodes for the Cronofy website.</p>
+  </header>
+
+  <nav class="patterns__nav col-extra-light">
+    <ul>
+      {% for pattern in site.patterns %}
+        <li><a href="#{{ site.baseurl }}{{ pattern.url }}">{{ pattern.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+
+  {% for pattern in site.patterns %}
+  <section id="{{ pattern.url }}" class="pattern">
+    <header>
+      <h2>{{ pattern.title }}</h2>
+    </header>
+    <div class="pattern__style">
+      {% if site.markdown-patterns %}{{ pattern.content | markdownify }}{% else %}{{ pattern.content }}{% endif %}
+    </div>
+    <a href="#" class="patterns__top">Back to top</a>
+  </section><!-- <?php echo '#' . $without_extension; ?>.pattern -->
+  {% endfor %}
+
+</div><!-- .patterns__site -->
