@@ -4,7 +4,7 @@ markdown: kramdown
 # '': for local development (localhost:4000)
 # '': for root level domains (mycustomdomain.com)
 # '/projectname': for subdomains (user.github.io/projectname)
-baseurl: 'jokedewinter.github.io/cronofy-styleguide'
+baseurl: 'https://jokedewinter.github.io/cronofy-styleguide'
 permalink: :title.html
 
 collections:
