@@ -31,6 +31,7 @@
 }
 
 .patterns__header span { font-family: "FFDINWebProBold", Helvetica, Arial, sans-serif; }
+.patterns__header a { border-bottom: 1px solid rgb(90, 84, 77); }
 
 /* Patterns navigation
 ---------------------------------------------------------------------------- */
