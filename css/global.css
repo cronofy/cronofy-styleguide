@@ -139,6 +139,7 @@
 .col-light { background: #f5f3f2; } /* rgb(245, 243, 242)			milk */
 .col-dark { background: #5a554d; } /* rgb(90, 84, 77)					chocolate */
 .col-white { background: #fff; }
+.col-page-lighter { background: #f8f7f6; }
 
 .col-extra-lighter { background: rgb(225, 221, 218); } /* milk with a little chocolate */
 .col-extra-light { background: rgb(202, 196, 190); } /* milk with a chocolate */
