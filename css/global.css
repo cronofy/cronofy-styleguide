@@ -123,7 +123,6 @@
   color: #fff;
   font-size: 1em;
   margin: 0;
-  opacity: 0;
   padding: 16px 0;
   position: absolute;
   text-align: center;
@@ -131,7 +130,7 @@
   width: 100%;
 }
 
-.colour__swatch:hover span { opacity: 1; }
+.colour__animated { display: block; }
 
 /* Main colours */
 .col-page { background: #f5f3f2; } /* rgb(245, 243, 242)			milk */
