@@ -13,3 +13,5 @@ collections:
     permalink: patterns/:path/
 
 markdown-patterns: false
+
+theme: jekyll-theme-cayman
